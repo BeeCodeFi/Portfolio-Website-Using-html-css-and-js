@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Ayush Kumar - Software Engineer specializing in Angular, React, Node.js, and MongoDB."
+    />
+
     <title>Document</title>
     <!-- CSS Files -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -45,6 +50,13 @@
       disabled
     />
     <link rel="stylesheet" href="./css/style-switcher.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-GY1yMQFjH62n4X8zQj3Zf8z2hCco1rSnH7U9Wv5lgqI3SZV3MyqBtv9BdRst1w7oAJy5cAqH3fqacXcXj3v4pw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Main Container Start -->
@@ -104,7 +116,7 @@
         </section>
         <!-- Home Section End -->
         <!-- About Section Start -->
-        <section class="about section" id="about">
+        <section class="about section" id="about" data-aos="zoom-in">
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
@@ -168,7 +180,9 @@
                     </div>
                     <div class="row">
                       <div class="button padd-15">
-                        <a href="#" class="btn">Download CV</a>
+                        <a href="./assets/Ayush_Resume.pdf" class="btn" download
+                          >Download CV</a
+                        >
                         <a href="#contact" class="btn hire-me">Hire Me</a>
                       </div>
                     </div>
@@ -355,7 +369,7 @@
                   <h4>Testing & Debugging</h4>
                   <p>
                     Ensuring quality with unit tests, debugging, and performance
-                    optimization for smooth user experience.
+                    optimization.
                   </p>
                 </div>
               </div>
@@ -495,7 +509,7 @@
                         class="form-control"
                         placeholder="Name"
                         name=""
-                        id=""
+                        id="name"
                       />
                     </div>
                   </div>
@@ -506,7 +520,7 @@
                         class="form-control"
                         placeholder="Email"
                         name=""
-                        id=""
+                        id="email"
                       />
                     </div>
                   </div>
@@ -519,7 +533,7 @@
                         class="form-control"
                         placeholder="Subject"
                         name=""
-                        id=""
+                        id="subject"
                       />
                     </div>
                   </div>
@@ -531,7 +545,7 @@
                         name=""
                         class="form-control"
                         placeholder="Message"
-                        id=""
+                        id="message"
                       ></textarea>
                     </div>
                   </div>
@@ -570,6 +584,7 @@
     <!-- Style Switcher End -->
 
     <!-- JavaScript Files -->
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
       integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
